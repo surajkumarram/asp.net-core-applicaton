@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome Suraj</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+
+
+
+
+
+<h1>@ViewBag.name</h1>
+<h1>@ViewData["sad"]</h1>
+<h1>@TempData["tm"]</h1>
+
+
+@{
+    var data = (Webcore.Models.Emp)@ViewData["objemp"];
+}
+
+<div>
+
+    <h1 class="text-center">@data.Name</h1>
+    <h1 class="text-center">@data.Course</h1>
+    <h1 class="text-center">@data.Address</h1>
+</div>
+
+
+
+
+
+
+
+
